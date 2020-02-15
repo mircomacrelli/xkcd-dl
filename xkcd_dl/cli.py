@@ -163,7 +163,7 @@ def download_one(xkcd_dict, xkcd_num):
 
         new_description = sanitize_description(description)
 
-        new_folder = '{current_directory}/xkcd_archive/{name}'.format(
+        new_folder = '{current_directory}/{name}'.format(
             current_directory=WORKING_DIRECTORY, 
             name=xkcd_number
         )
