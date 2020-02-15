@@ -259,6 +259,10 @@ def show_xkcd(num):
 
 def main():
     args = parser.parse_args()
+
+    if args.path:
+        set_custom_path(args.path)
+
     if args.update_db:
         update_dict()
     elif args.download_latest:
@@ -271,8 +275,6 @@ def main():
         download_xkcd_range(*args.download_range)
     elif args.show:
         show_xkcd(args.show)
-    elif args.path:
-        set_custom_path(args.path)
     else:
         parser.print_usage()
 
