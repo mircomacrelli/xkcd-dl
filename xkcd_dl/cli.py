@@ -27,11 +27,10 @@ __author__ = 'Tasdik Rahman'
 __email__ = 'prodicus@outlook.com'
 __version__ = VERSION
 
-HOME = expanduser('~')
 BASE_URL = 'http://xkcd.com'
 ARCHIVE_URL='http://xkcd.com/archive/'
-xkcd_dict_filename = '.xkcd_dict.json'
-xkcd_dict_location = os.path.join(HOME, xkcd_dict_filename)
+xkcd_dict_filename = 'xkcd_dict.json'
+xkcd_dict_location = os.path.join(os.getcwd(), xkcd_dict_filename)
 SCRIPT_DIRECTORY = os.path.dirname(os.path.abspath(__file__)) 
 WORKING_DIRECTORY = os.getcwd()
 IMAGE_HANDLER = 'open' if sys.platform == 'darwin' else 'xdg-open'
