@@ -34,7 +34,7 @@ xkcd_dict_location = os.path.join(os.getcwd(), xkcd_dict_filename)
 SCRIPT_DIRECTORY = os.path.dirname(os.path.abspath(__file__)) 
 WORKING_DIRECTORY = os.getcwd()
 IMAGE_HANDLER = 'open' if sys.platform == 'darwin' else 'xdg-open'
-excludeList = ['1350','1416','1525','1608','1416','1506','1446','1663', '2198' ]
+excludeList = ['1350','1416','1525','1608','1416','1506','1446','1663', '2198', '2067' ]
 
 def download_all():
     json_content = read_dict()
