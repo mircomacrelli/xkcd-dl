@@ -21,11 +21,9 @@ import magic
 import requests
 from bs4 import BeautifulSoup as bs4
 
-from xkcd_dl.version import VERSION
-
 __author__ = 'Tasdik Rahman'
 __email__ = 'prodicus@outlook.com'
-__version__ = VERSION
+__version__ = "0.1.2"
 
 BASE_URL = 'http://xkcd.com'
 ARCHIVE_URL='http://xkcd.com/archive/'
