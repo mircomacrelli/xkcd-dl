@@ -166,6 +166,9 @@ def download_one(xkcd_dict, xkcd_num):
             name=xkcd_number
         )
 
+        if os.path.exists(new_folder):
+            return None
+
         to_download_single = "{base}/{xkcd_num}/".format(base=BASE_URL, xkcd_num=xkcd_number)
         print("Downloading xkcd from '{img_url}' and storing it under '{path}'".format(
             img_url=to_download_single, 
